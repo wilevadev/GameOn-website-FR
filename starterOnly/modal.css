@@ -427,7 +427,7 @@ input {
   color: #fff;
   position: relative;
   text-align: left;
-  min-width: 424px;
+  /* min-width: 424px; retire le min-widht */
 }
 .hero-content::after {
   content: "";
@@ -486,8 +486,7 @@ footer {
   margin: 0 20px;
 }
 @media screen and (max-width: 800px) {
-  /* changement de bouton responsive a voir  */
-  .btn-submit,.btn-signup{
+  .btn-submit,.btn-signup{ /* ajout du bouton responsive */
    padding: 7px 42px;
   }
   .hero-section {
@@ -506,12 +505,12 @@ footer {
     display: none;
   }
   .hero-headline {
-    font-size: 4.5rem;
+   font-size: 45px; /*  font-size a 45px */
     white-space: normal;
   }
   .hero-text {
     width: unset;
-    font-size: 1.5rem;
+    font-size: 25px;/*  font-size a 25px */
   }
   .hero-img img {
     border-radius: 10px;
@@ -520,7 +519,8 @@ footer {
   .hero-section > .btn-signup {
     display: block;
     margin: 32px auto 10px;
-    padding: 12px 35px;
+   padding: 10px 30px;  /*  chamgement padding bouton et fontsize a 1 rem */
+    font-size: 1rem;
   }
   .copyrights {
     margin-top: 50px;
